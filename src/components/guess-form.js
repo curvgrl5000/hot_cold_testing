@@ -20,7 +20,7 @@ export default class GuessForm extends React.Component {
                 <input type="text" name="userGuess" id="userGuess"
                     className="text" maxLength="3" autoComplete="off"
                     placeholder={Math.round(Math.random() * 100)} required
-                    ref={input => this.input = input} />
+                    ref={incoming_input => this.input = incoming_input} />
                 <input type="submit" id="guessButton" className="button" name="submit" value="Guess"/>
             </form>
         );
